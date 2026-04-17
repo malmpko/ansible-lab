@@ -1,0 +1,12 @@
+name: Test playbook
+hosts: localhost
+connection: local
+tasks:
+name: Visa ett meddelande
+debug:
+msg: "Ansible koer fraen kontrollnoden!"
+name: Visa en variabel
+debug:
+msg: "Miljo: {{ environment }}"
+vars:
+environment: "lab"
